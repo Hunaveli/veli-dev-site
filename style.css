@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*intro*/
+.intro {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    background: black;
+    transition: opacity 1s;
+    overflow: hidden;
+}
+
+.button1 {
+    border: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    color: white;
+    position: absolute;
+    transform: translate( -50%, -50%);
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+}
+
+.button2 {
+    border: none;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    color: white;
+    position: absolute;
+    transform: translate( -50%, -50%);
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.Hclick {
+    position: absolute;
+    transform: translate( -50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.Hclick2 {
+    position: absolute;
+    transform: translate( -50%, -50%);
+    top: 50%;
+    left: 50%;
+    visibility: hidden;
+}
+
+.bggif {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+}
+/* gradient background
+.bg {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background: linear-gradient(90deg, #F72585, #B5179E, #7209B7, #560BAD, #480CA8, #3A0CA3, #3F37C9, #4361EE, #4895EF, #4CC9F0);
+    animation: bg 15s ease infinite;
+    background-size: 400% 400%;
+}
+@keyframes bg {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+/* background animation ^ */
+
+.body {
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+/* disable scrollbar for phones */
+.body::-webkit-scrollbar {
+    display: none;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.social-menu ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    padding: .3%;
+    margin: 0;
+    display: flex;
+    border-radius: 27px;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.9);
+}
+.social-menu ul li {
+    list-style: none;
+    margin: 0px 10px;
+}
+.socialcons {
+    width: 65px;
+    transition: .5s;
+}
+.socialcons:hover {
+    transform: rotate(0deg) skew(0deg) translate(0, -4px);
+}
+
+.audio {
+    
+}
+
+/* does not work on phones */
+.video {
+    position: absolute;
+    display: flex;
+    top: 50%;
+    left: 50%; 
+    transform: translate( -50%, -50%);
+    overflow: hidden;
+    min-width: 100vh;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    
+}
+.Hlogo {
+    width: 70px;
+    position: absolute;
+    display: flex;
+    top: 41%;
+    left: 50%; 
+    transform: translate( -50%, -50%);
+    transition: .5s;
+    padding: inherit;
+}
+
+.Hlogo:hover {
+    width: 67px;
+    cursor: none;
+}
+
+.sitetitle {
+    width: 140px;
+    display: flex;
+    top: 58.5%;
+    left: 50%; 
+    transform: translate( -50%, -50%);
+    position: absolute;
+}
+
+/* slider to volume of video */
+.volslider {
+    display: flex;
+    top: 63%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    position: fixed;
+}
+/* slider bar */
+.slider {
+    -webkit-appearance: none;
+    width: 190px;
+    height: 10px;
+    border-radius: 10px;
+    background: #000000;
+    outline: none;
+    opacity: 0.4;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+.slider:hover {
+    opacity: 0.7;
+}
+/* slider button */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none; 
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+}
+.slider::-moz-range-thumb {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.shoplink {
+    display: flex;
+    position: absolute;
+    top: 90%;
+    left: 50%; 
+    transform: translate( -50%, -50%);
+}
+
+.fortshop {
+    height: 85px;
+    transition: .5s;
+}
+
+.fortshop:hover{
+    height: 100px;
+}
+
+/* for the phone */
+@media(max-width: 512px){
+    .Hlogo {
+        top: 40%;
+    }
+    .socialcons {
+    width: 60px;
+    }
+    .sitetitle {
+       /* top: 59% */
+        visibility: hidden;
+    }
+    .video {
+        visibility: hidden;
+    }
+    .slider {
+        visibility: hidden;
+    }
+}
+
+@media(max-width: 320px) and (max-height: 568px){
+    .Hlogo {
+        top: 37%;
+    }
+    .sitetitle {
+        top: 62%;
+    }
+}
+
+@media(max-width: 1024px) and (max-height: 600px){
+    .Hlogo {
+        top: 37%;
+    }
+    .sitetitle {
+        top: 62%;
+    }
+}
+
+@media(max-width: 375px) and (max-height: 667px){
+    .Hlogo {
+        top: 36%;
+    }
+    .sitetitle {
+        top: 63%;
+    }
+}
+
+@media(min-width: 1921px){
+    .video {
+        visibility: hidden;
+    }
+}
+
+/* 
+
+if you see this, I hope you have a good day! Thanks for thinking my code
+is interesting enough to leech (:
+
+I Love You Bay <3
+
+This site was published and coded by @Hunaveli
+
+*/

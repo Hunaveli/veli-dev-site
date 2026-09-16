@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,">
+    <title>Veli.Dev | Home Of Hunaveli</title>
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-57x57.png" sizes="57x57">
+    <link rel='shortcut icon' href='images/favicon.ico' type='image/x-icon' />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link type="text/javascript">
+</head>
+ 
+<body>
+    <div id="splash" class="intro">
+        <img src="images/Hclickme.gif" class="Hclick" style="width:110px;height:110px;">
+        <button class="button1" type="button" onclick="fadeOut();"></button>
+    </div>
+    <div class="gifbg">
+        <image class="bggif" src="images/bggif.gif"></image>
+    </div>
+    <div class="bg"></div>
+    <section class="header">
+        <div class="audio">
+            <audio id="Audio" loop>
+                <source src="Assets/her.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <div class="video">
+            <video id="Video" loop>
+                <source src="Assets/views.mp4" type="video/mp4">
+                <source src="Assets/views.ogg" type="video/ogg">
+            </video>
+        </div>
+        <div class="social-menu">
+            <img class="Hlogo" src="images/h-mm-logo.png">
+            <ul>
+                <li><a href="https://discord.gg/nRfVdpwTVN" target="_blank" rel="noopener noreferrer"><img class="socialcons" src="images/whitediscordlogo.png"></a></li>
+                <li><a href="https://www.instagram.com/hunaveli/" target="_blank" rel="noopener noreferrer"><img class="socialcons" src="images/whiteiglogo.png"></a></li>
+                <li><a href="https://www.flipd.gg/hunaveli" target="_blank" rel="noopener noreferrer"><img class="socialcons" src="images/whiteogu.png"></a></li>
+                <li><a href="https://www.twitch.tv/hunaveli" target="_blank" rel="noopener noreferrer"><img class="socialcons" src="images/whitetwitchlogo.png"></a></li>
+            </ul>
+        </div>
+        <div class="volslider">
+            <input id="volume" class="slider" type="range" value="50" min="0" max="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume(this.value)">
+        </div>
+        <div class="shoplink">
+               <a href="shop" target="_self" rel="noopener noreferrer"><img class="fortshop" src="images/shopico.png"></a>
+        </div>
+    </section>
+</body>
+    
+<script>
+    function fadeOut()
+    {
+        const intro = document.getElementById('splash');
+        var vid = document.getElementById('Video');
+        var audio = document.getElementById('Audio');
+        intro.style.opacity = '0';
+        setTimeout(zindex, 1200);
+        if (innerWidth <= 512)
+        {
+                audio.play();
+        }
+        else
+            vid.play();
+    } 
+</script>
+    
+<script>
+    function zindex() {
+        const intro = document.getElementById('splash');
+        intro.style.zIndex = '-1';
+    }
+</script>
+
+<script>
+    window.SetVolume = function(val)
+{
+    var player = document.getElementById('Video');
+    var player2 = document.getElementById('Audio');
+    player.volume = val / 100;
+    player2.volume = val / 100;
+}
+</script>
+    
+</html>

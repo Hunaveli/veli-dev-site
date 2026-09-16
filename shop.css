@@ -1,0 +1,388 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* font-family: 'Poppins', sans-serif; 
+
+   Site developed by Hunaveli.
+
+*/
+
+.shop, .disclaimer {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: linear-gradient(90deg, #ba8613, #4c51f7, #9d4dbb);
+    animation: bg 11s ease infinite;
+    background-size: 400% 400%;
+    cursor: default;
+}
+@keyframes bg {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.header {
+    
+}
+
+.Hlogo {
+    width: 100px; 
+    position: block;
+    margin: 0;
+    display: flex;
+    padding: 10px 8px;
+    transition: .3s;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.Hlogo:hover {
+    transform: scale(1.1);
+}
+
+.disclaim-h {
+    width: 100px;
+    display: block;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+}
+
+.terms {
+    height: 65vh;
+    width: 65vh;
+    border: 2px solid #000;
+    box-shadow: 0px 0px 45px 0 rgba(0, 0, 0, 1);
+    overflow: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    background: white;
+    padding: 15px 15px;
+}
+
+.disclaimer h1 {
+    color: black;
+    text-align: center;
+}
+
+.backbtn {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    text-decoration: underline;
+    position: relative;
+    color: white;
+}
+
+.dislink {
+    background: #121212;
+    text-align: center;
+    position: relative;
+    display: block;
+    padding: 0px 8%;
+    padding-bottom: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+}
+
+.footer {
+    margin: auto;
+}
+
+.content h1 { 
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    text-decoration-line: underline;
+    position: relative;
+    padding: 5px;
+    white-space: nowrap;
+    text-shadow: 2px 2px 45px black;
+}
+
+.content h1:hover {
+    cursor: default;
+}
+
+.content h2 {
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-size: 34px;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 25px black;
+}
+
+.column {
+    float: left;
+    display: block;
+    width: 25%;
+    padding: 30px 0px;
+}
+
+.column2 {
+    float: left;
+    display: block;
+    width: 33.33%;
+    padding: 30px 0px;
+}
+
+.column3 {
+    float: left;
+    display: block;
+    width: 20%;
+    padding: 30px 0px;
+}
+
+.card1, .card2, .card3 {
+    box-shadow: 0px 0px 45px 0 rgba(0, 0, 0, 1);
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.card1:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 65px 0 rgba(194, 140, 20, 1);
+}
+
+.card2:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 65px 0 rgba(125, 100, 149, 1);
+}
+
+.card3:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 65px 0 rgba(60, 64, 197, 1);
+}
+
+.content h3 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    padding: 10px;
+    padding-top: 25px;
+    color: white;
+    text-align: center;
+    clear: both;
+}
+
+.desc {
+    background-color: #121212;
+    clear: both;
+}
+
+.desc hr {
+    padding: 10px;
+}
+
+.np {
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 1px;
+    text-align: center;
+    color: white;
+    margin: 10px;
+}
+
+.showcase {
+    width: 60vh;
+    box-shadow: 0px 0px 30px 0 rgba(00, 00, 00, 1);
+    margin: 20px;
+    margin-bottom: 20px;
+}
+
+.row2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+    padding: 10px 8%;
+}
+
+.security {
+    padding: 25px 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: default;
+    background: transparent;
+    transition: transform 0.5s, background 0.5s;
+}
+
+.security i {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #4c51f7;
+}
+
+.security h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.sp {
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+}
+
+.security:hover {
+    background: #4c51f7;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.security:hover i {
+    color: #fff;
+}
+
+.content h5 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    padding: 15px;
+    padding-top: 5px;
+    color: white;
+}
+
+.payments ul {
+    padding: 0;
+}
+
+.payments ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0px 0px;
+    padding-bottom: 1vh;
+}
+
+.method {
+    width: 35px;
+}
+
+.buybtn {
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #C0C0C0;
+    border: 2px solid #C0C0C0;
+    border-radius: 35px;
+    padding: 10px 15px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    margin: 2px;
+    margin-bottom: 20px;
+    z-index: 1;
+    transition: .3s;
+}
+
+.buybtn2 {
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #4c51f7;
+    border: 2px solid #4c51f7;
+    border-radius: 35px;
+    padding: 10px 15px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    margin: 2px;
+    margin-bottom: 20px;
+    z-index: 1;
+    transition: .3s;
+}
+
+.buybtn:hover{
+    border: 2px solid #C0C0C0;
+   /* font-size: 17px; */
+    transform: scale(1.05);
+    color: black;
+    background: #C0C0C0;
+}
+
+.buybtn2:hover{
+    border: 2px solid #000;
+   /* font-size: 17px; */
+    transform: scale(1.05);
+    color: black;
+    background: #4c51f7;
+}
+
+.acctwo {
+    padding: 15px;
+}
+
+@media screen and (max-width: 1510px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+    .column2 {
+        width: 100%;
+        display: block;
+    }
+    .content h1 {
+        padding: 25px;
+    }
+    .showcase {
+        
+    }
+}
+
+@media screen and (max-width: 1651px) {
+    .column3 {
+        width: 100%;
+        display: block;
+    }
+}
+    
+@media screen and (max-width: 500px) {
+    .content h1 {
+        font-size: 32px;
+    }
+    .showcase {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 766px) {
+    .terms {
+        width: 75%;
+    }
+}
