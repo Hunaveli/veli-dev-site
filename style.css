@@ -121,10 +121,10 @@
 }
 .social-menu ul li {
     list-style: none;
-    margin: 0px 10px;
+    margin: 0px 8px;
 }
 .socialcons {
-    width: 65px;
+    width: 60px;
     transition: .5s;
 }
 .socialcons:hover {
@@ -235,10 +235,10 @@
 /* for the phone */
 @media(max-width: 512px){
     .Hlogo {
-        top: 40%;
+        top: 39%;
     }
     .socialcons {
-    width: 60px;
+    width: 55px;
     }
     .sitetitle {
        /* top: 59% */
@@ -289,8 +289,6 @@
 
 if you see this, I hope you have a good day! Thanks for thinking my code
 is interesting enough to leech (:
-
-I Love You Bay <3
 
 This site was published and coded by @Hunaveli
 
